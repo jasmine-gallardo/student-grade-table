@@ -3,7 +3,7 @@ class PageHeader {
     this.headerElement = headerElement;
     this.pageHeader = pageHeader;
   }
-  updateAverage(newAverage) {
+  updateAverage(newAverage, average) {
     console.log(newAverage);
   }
 }

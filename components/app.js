@@ -9,6 +9,15 @@ class App {
   }
   handleGetGradesSuccess(grades) {
     this.gradeTable.updateGrades(grades);
+    var newGrades = 0;
+
+    for (var i in grades){
+      newGrades += grades[i].grade;
+      var average = newGrades / grades.length;
+    }
+
+    console.log("Average:", average);
+    console.log("New Grades:", newGrades);
   }
   getGrades() {
     $.ajax({
