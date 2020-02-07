@@ -16,6 +16,9 @@ class GradeForm {
       var courseData = course;
       var gradeData = grade;
     }
+
+    this.createGrade(nameData, courseData, gradeData);
+
     console.log("hi");
   }
 }
