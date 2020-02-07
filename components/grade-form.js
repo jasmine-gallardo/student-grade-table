@@ -11,13 +11,15 @@ class GradeForm {
     event.preventDefault()
     var formData = new FormData(event.target);
 
-    formData.get(name, course, grade) {
-      var nameData = name;
-      var courseData = course;
-      var gradeData = grade;
-    }
+    formData.get(name, course, grade);
+
+    var nameData = name;
+    var courseData = course;
+    var gradeData = grade;
 
     this.createGrade(nameData, courseData, gradeData);
+
+    event.target.reset();
 
     console.log("hi");
   }
