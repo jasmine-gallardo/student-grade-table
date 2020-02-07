@@ -35,4 +35,10 @@ class App {
   start() {
     this.getGrades();
   }
+
+  createGrade(name, course, grade) {
+    console.log("Name:", name);
+    console.log("Course:", course);
+    console.log("Grade:", grade);
+  }
 }
