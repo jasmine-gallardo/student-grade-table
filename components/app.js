@@ -41,4 +41,7 @@ class App {
     console.log("Course:", course);
     console.log("Grade:", grade);
   }
+  handleCreateGradeError(error) {
+    console.log(error);
+  }
 }
