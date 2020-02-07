@@ -8,8 +8,7 @@ class GradeForm {
     this.createGrade = createGrade;
   }
   handleSubmit(event) {
-    event.preventDefault() {
+    event.preventDefault()
       console.log("hi");
-    }
   }
 }
