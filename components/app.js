@@ -69,4 +69,7 @@ class App {
   deleteGrade(id) {
     console.log(id);
   }
+  handleDeleteGradeError(error) {
+    console.error(error);
+  }
 }
