@@ -58,5 +58,7 @@ class GradeTable {
     trElementRender.appendChild(tdRenderForButton);
 
     tbodyElement2.appendChild(trElementRender);
+
+    return trElementRender;
   }
 }
