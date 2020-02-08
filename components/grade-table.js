@@ -46,6 +46,9 @@ class GradeTable {
     deleteButtonRender.textContent = "DELETE";
     deleteButtonRender.className = "btn btn-danger";
     deleteButtonRender.setAttribute("type", "button");
+    deleteButtonRender.addEventListener("click", function(){
+      deleteGrade(data.id);
+    });
 
     tdRenderForButton.appendChild(deleteButtonRender);
 
@@ -55,7 +58,5 @@ class GradeTable {
     trElementRender.appendChild(tdRenderForButton);
 
     tbodyElement2.appendChild(trElementRender);
-
-
   }
 }
