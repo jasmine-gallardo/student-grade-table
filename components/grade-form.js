@@ -11,11 +11,9 @@ class GradeForm {
     event.preventDefault()
     var formData = new FormData(event.target);
 
-    formData.get(name, course, grade);
-
-    var nameData = name;
-    var courseData = course;
-    var gradeData = grade;
+    var nameData = formData.get("name");
+    var courseData = formData.get("course");
+    var gradeData = formData.get("grade");
 
     this.createGrade(nameData, courseData, gradeData);
 
