@@ -41,6 +41,7 @@ class App {
   start() {
     this.getGrades();
     this.gradeForm.onSubmit(this.createGrade);
+    this.gradeTable.onDeleteClick(this.deleteGrade);
   }
   createGrade(name, course, grade) {
     console.log("Name:", name);
@@ -70,7 +71,7 @@ class App {
     this.getGrades();
   }
   deleteGrade(id) {
-    console.log(id);
+    console.log("Id:", id);
   }
   handleDeleteGradeError(error) {
     console.error(error);
