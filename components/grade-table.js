@@ -9,8 +9,10 @@ class GradeTable {
     for (var i = 0; i < grades.length; i++){
       this.renderGradeRow(grades[i], this.deleteGrade);
     }
-    if (!grades) {
+    if (grades.length === 0) {
       this.noGradesElement.classList.remove("d-none");
+    } else {
+      this.noGradesElement.classList.add("d-none");
     }
     console.log("Grades:", grades);
   }
