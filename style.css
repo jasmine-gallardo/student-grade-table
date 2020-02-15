@@ -1,0 +1,15 @@
+@media only screen
+and (max-width: 1024px){
+  #header {
+    text-align: center;
+  }
+  .text-lg-right{
+    text-align: center;
+  }
+  .row {
+    display: block;
+  }
+  .col-8 {
+    max-width: 100%;
+  }
+}
