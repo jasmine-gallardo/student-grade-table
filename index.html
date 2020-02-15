@@ -15,17 +15,20 @@
         </h3>
       </header>
       <div class="row">
-        <table class="col-8 table table-striped table-bordered table-hover">
-          <thead>
-            <tr>
-              <th class="table-dark">Student Name</th>
-              <th class="table-dark">Course</th>
-              <th class="table-dark">Grade</th>
-              <th class="table-dark">Operations</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+        <div class="col-8">
+          <table class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th class="table-dark">Student Name</th>
+                <th class="table-dark">Course</th>
+                <th class="table-dark">Grade</th>
+                <th class="table-dark">Operations</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p class="d-none">No Grades Recorded</p>
+        </div>
         <fieldset class="col">
           <form action="post">
             <div>
@@ -48,7 +51,6 @@
           </form>
         </fieldset>
       </div>
-      <p class="d-none">No Grades Recorded</p>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
