@@ -1,9 +1,12 @@
-@media only screen
-and (max-width: 1024px){
-  #header {
-    text-align: center;
+@media only screen and (max-width: 1024px){
+  .container {
+    max-width: 720px;
   }
-  .text-lg-right{
+  .col-9 {
+    text-align: center;
+    max-width: 100%;
+  }
+  h3{
     text-align: center;
   }
   .row {
