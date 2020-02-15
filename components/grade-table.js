@@ -14,7 +14,6 @@ class GradeTable {
     } else {
       this.noGradesElement.classList.add("d-none");
     }
-    console.log("Grades:", grades);
   }
   onDeleteClick(deleteGrade) {
     this.deleteGrade = deleteGrade;
