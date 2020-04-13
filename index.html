@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <title>Student Grade Table</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Student Grade Table</title>
   </head>
   <body>
     <main class="container">
-      <header class="mt-4 mb-4 row">
-        <h1 class="col">Student Grade Table</h1>
-        <h3 class="col m-auto text-right">Average Grade
-          <span class="badge badge-info m-auto pl-4 pr-4 pt-3 pb-3"></span>
+      <header id="header" class="mt-4 mb-4 row">
+        <h1 class="col-9">Student Grade Table</h1>
+        <h3 id="averageGrade" class="col">Average Grade
+          <span class="badge badge-info m-auto p-2"></span>
         </h3>
       </header>
       <div class="row">
-        <table class="col-8 table table-striped table-bordered table-hover">
-          <thead>
-            <tr>
-              <th class="table-dark">Student Name</th>
-              <th class="table-dark">Course</th>
-              <th class="table-dark">Grade</th>
-              <th class="table-dark">Operations</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+        <div class="col-8">
+          <table class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th class="table-dark">Student Name</th>
+                <th class="table-dark">Course</th>
+                <th class="table-dark">Grade</th>
+                <th class="table-dark">Operations</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p class="d-none">No Grades Recorded</p>
+        </div>
         <fieldset class="col">
           <form action="post">
             <div>
@@ -47,7 +51,6 @@
           </form>
         </fieldset>
       </div>
-      <p class="d-none">No Grades Recorded</p>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>

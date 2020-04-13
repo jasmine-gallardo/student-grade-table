@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1024px){
+  .container {
+    max-width: 720px;
+  }
+  .col-9 {
+    text-align: center;
+    max-width: 100%;
+  }
+  h3 {
+    text-align: center;
+  }
+  .row {
+    display: block;
+  }
+  .col-8 {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+  .col-9 {
+    max-width: 70%;
+  }
+  h3 {
+    max-width: 30%;
+  }
+}
